@@ -18,10 +18,12 @@ public class ArithmeticBase
  public double x,y;
     double calculate(double x, double y) 
         {
-        Scanner sc =new Scanner(System.in);
+       // Scanner sc =new Scanner(System.in);
         System.out.println("enter String");
-        String s= sc.next();
-        switch (s.toUpperCase()) 
+        //String s= sc.next();
+        public Enum string(PLUS,MINUS,TIMES,DIVIDE);
+        private operator s;
+        switch (s.value)
         {
             case "PLUS":
                 return x + y;
@@ -33,7 +35,6 @@ public class ArithmeticBase
                 return x / y;
             default:
                 throw new AssertionError("Unknown operations " + this);
-        }
-    }
-   
-}
+        
+    }   
+
